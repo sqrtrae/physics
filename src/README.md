@@ -13,11 +13,11 @@ The primary purpose of this repository is to be an aid as I study physics/mathem
 
 Oh and one more thing...
 
-> - 🏳️‍⚧️ Trans rights are human rights! 🏳️‍⚧️
-> - 🇵🇸 Free Palestine! 🇵🇸
-> - Fuck Nazis!
-> - Fuck the IOF!
-> - Fuck TERFs!
-> - Fuck ICE!
+- 🏳️‍⚧️ Trans rights are human rights! 🏳️‍⚧️
+- 🇵🇸 Free Palestine! 🇵🇸
+- Fuck Nazis!
+- Fuck the IOF!
+- Fuck TERFs!
+- Fuck ICE!
 
 If any of that made you mad, then know you are not welcome here :3

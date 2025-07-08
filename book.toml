@@ -7,6 +7,7 @@ title = "My Physics Notebook"
 [preprocessor.pagetoc]
 
 [preprocessor.admonish]
+after = ["links"]
 command = "mdbook-admonish"
 assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
 

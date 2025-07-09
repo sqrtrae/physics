@@ -10,6 +10,7 @@ install-mdbook:
     cargo install --version ${MDBOOK_ADMONISH_VERSION} mdbook-admonish
 
 build:
+    mkdir -p ./assets/gen/css
     mdbook-admonish generate-custom ./assets/gen/css/mdbook-admonish-custom.css
     mdbook build
 

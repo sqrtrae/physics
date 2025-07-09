@@ -15,8 +15,10 @@ build:
     mdbook build
 
 open:
+    mkdir -p ./assets/gen/css
     mdbook-admonish generate-custom ./assets/gen/css/mdbook-admonish-custom.css
     mdbook serve --open
 
 generate-custom-admonish:
+    mkdir -p ./assets/gen/css
     mdbook-admonish generate-custom ./assets/gen/css/mdbook-admonish-custom.css

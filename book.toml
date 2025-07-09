@@ -13,6 +13,8 @@ assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
 
 [output.html]
 default-theme = "coal"
+preferred-dark-theme = "coal"
+smare-punctuation = true
 no-section-label = true
 additional-css = [
     "theme/pagetoc.css",
@@ -20,6 +22,8 @@ additional-css = [
 ]
 additional-js  = ["theme/pagetoc.js"]
 mathjax-support = true
+git-repository-url = "https://github.com/sqrtrae/physics"
+git-repository-icon = "fa-github"
 
 [output.html.fold]
 enable = true

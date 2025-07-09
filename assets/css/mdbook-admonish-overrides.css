@@ -1,0 +1,3 @@
+:is(.admonish-theorem) > :is(.admonition-title, summary.admonition-title) {
+    background-color: rgba(245, 169, 184, 0.2);
+}

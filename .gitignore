@@ -3,3 +3,6 @@ book/
 # IDEs
 .vscode/
 .idea/
+
+# assets generated during build process
+assets/gen/**

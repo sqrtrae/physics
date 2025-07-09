@@ -2,10 +2,6 @@
 
 ## 1.1 - Classical Mechanics
 
-```admonish info
-This section is primarily a (very) brief history lesson in the development of classical mechanics.
-```
-
 The first formulation—Newton's three laws of motion—of classical mechanics was developed from the works of Galileo (1564 - 1642) and Newton (1642 - 1727). 
 Two alternative formulations—Lagrangian mechanics and Hamiltonian mechanics—were developed by Lagrange (1736 - 1813) and Hamilton (1805 - 1865) respectively.
 
@@ -15,6 +11,8 @@ Each point $P$ of three-dimensional space can be labeled by a position vector $\
 
 $$\vec{r} = x\hat{x} + y\hat{y} + z\hat{z}$$
 
-```admonish todo
+
+
+```admonish note
 Finish chapter
 ```

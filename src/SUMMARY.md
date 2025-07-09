@@ -11,3 +11,9 @@
     - [Chapter 1](physics/classical-mechanics/notes/ch1.md)
 
 # Mathematics
+
+---
+
+# Misc
+
+- [Custom Admonish Blocks](custom_admonish_blocks.md)

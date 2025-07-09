@@ -44,18 +44,16 @@ jobs:
             ~/.cargo/git/db/
             target/
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+      - uses: extractions/setup-just@v3
+        with:
+          just-version: 1.41.0
       - name: Install mdBook
-        run: |
-          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
-          rustup update
-          cargo install --version ${MDBOOK_VERSION} mdbook
-          cargo install --version ${MDBOOK_PAGETOC_VERSION} mdbook-pagetoc
-          cargo install --version ${MDBOOK_ADMONISH_VERSION} mdbook-admonish
+        run: just install-mdbook
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
-        run: mdbook build
+        run: just build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -10,12 +10,14 @@ extra-watch-dirs = [
 ]
 
 [output.html]
-default-theme = "coal"
-preferred-dark-theme = "coal"
+default-theme = "latte"
+preferred-dark-theme = "mocha"
 smare-punctuation = true
 no-section-label = true
 additional-css = [
     "theme/pagetoc.css",
+    # https://github.com/catppuccin/mdbook for source of catppuccin themes
+    "theme/catppuccin.css",
     "assets/css/mdbook-admonish.css",
     # this file is generated using `mdbook-admonish generate-custom`
     "assets/gen/css/mdbook-admonish-custom.css",

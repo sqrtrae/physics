@@ -1,6 +1,13 @@
 # 1 - Newton's Laws of Motion
 
-The following notes were taken using chapter 1 of John R. Taylor's _Classical Mechanics_ (2005) as reference material.
+```admonish textbook
+John R. Taylor's _Classical Mechanics_ (2005)
+
+---
+
+Material used on this page:
+- Chapter 1 - Newton's Laws of Motion
+```
 
 ## 1.1 - Classical Mechanics
 

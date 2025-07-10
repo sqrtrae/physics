@@ -1,9 +1,17 @@
 # 1 - Newton's Laws of Motion
 
-The following problems are taken from chapter 1 of John R. Taylor's _Classical Mechanics_ (2005).
-The solutions are primarily my own, with the only outside work being that of contributors providing corrections and fixes.
+```admonish textbook
+John R. Taylor's _Classical Mechanics_ (2005)
 
 ---
+
+Material used on this page:
+- Chapter 1 - Newton's Laws of Motion
+```
+
+## Problems & Solutions
+
+<h3 hidden><a class="header">Problem 1.1</a></h2>
 
 ```admonish problem title="Problem 1.1"
 Given the two vectors $\vec{b} = \hat{x} + \hat{y}$ and $\vec{c} = \hat{x} + \hat{z}$ find

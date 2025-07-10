@@ -62,3 +62,8 @@ color = "#A30262"
 icon = "./theme/assets/icons/solution.svg"
 color = "#35E873"
 collapsible = true
+
+[preprocessor.admonish.directive.custom.reference]
+icon = "./theme/assets/icons/reference.svg"
+color = "#EF7627"
+aliases = ["textbook"]

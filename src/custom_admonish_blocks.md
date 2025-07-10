@@ -37,3 +37,13 @@ Hello World!
 ```admonish solution
 Hello World!
 ```
+
+## Reference
+
+```admonish reference
+Hello World!
+```
+
+```admonish textbook
+Hello World!
+```

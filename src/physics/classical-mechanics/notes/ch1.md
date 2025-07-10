@@ -1,6 +1,6 @@
 # 1 - Newton's Laws of Motion
 
-Notes taken from chapter 1 of John R. Taylor's _Classical Mechanics_ (2005).
+The following notes were taken using chapter 1 of John R. Taylor's _Classical Mechanics_ (2005) as reference material.
 
 ## 1.1 - Classical Mechanics
 
@@ -11,11 +11,13 @@ Two alternative formulations—Lagrangian mechanics and Hamiltonian mechanics—
 
 ### 1.2.1 - Space
 
-Each point $P$ of three-dimensional space can be labeled by a position vector $\vec{r}$. The position vector $\vec{r}$ is most naturally expanded by giving its components $(x, y, z)$ in the direction of three perpendicular axes; we define the three unit vectors $\hat{x}, \hat{y}, \hat{z}$ to lie along these axes such that:
+Each point $P$ of three-dimensional space can be labeled by a position vector $\vec{r}$.
+The position vector $\vec{r}$ is most naturally expanded using Cartesian coordinates:
 
-$$\vec{r} = x\hat{x} + y\hat{y} + z\hat{z}.$$
+$$\vec{r} = x\hat{x} + y\hat{y} + z\hat{z},$$
 
-Alternative notation, where $(x, y, z) = (r_1, r_2, r_3)$ and $(\hat{x}, \hat{y}, \hat{z}) = (\hat{e}_1, \hat{e}_2, \hat{e}_3)$:
+where $\hat{x}, \hat{y}, \hat{z}$ are orthonormal unit vectors and $x, y, z$ are the components of $\vec{r}$ along these unit vectors, respectively.
+On occasion, an alternative indexed notation, where $(x, y, z) = (r_1, r_2, r_3)$ and $(\hat{x}, \hat{y}, \hat{z}) = (\hat{e}_1, \hat{e}_2, \hat{e}_3)$, will be used:
 
 $$\vec{r} = r_1\hat{e}_1 + r_2\hat{e}_2 + r_3\hat{e}_3 = \sum _{i=1}^3 r_i\hat{e}_i.$$
 
@@ -55,6 +57,39 @@ $$
 
 ```
 
+### 1.2.3 - Differentiation of Vectors
+
+Let $\vec{r}(t)$ be the position of a particle as a function of time. 
+The derivative of $\vec{r}(t)$ is the velocity of the particle, denoted $\vec{v}(t)$. 
+Further, the derivative of $\vec{v}(t)$ is the acceleration of the particle, denoted $\vec{a}(t)$.
+In Cartesian coordinates, the derivative of $\vec{r}(t)$ is simply the vector formed from the derivative of its components:
+
+$$\vec{v} := \frac{d\vec{r}}{dt} = \frac{dx}{dt}\hat{x} + \frac{dy}{dt}\hat{y} + \frac{dz}{dt}\hat{z}.$$
+
+Because of how often the time derivative comes up, there exists an abbreviated dot notation:
+
+$$\dot{x} := \frac{dx}{dt}, \\quad \dot{\vec{r}} = \dot{x}\hat{x} + \dot{y}\hat{y} + \dot{z}\hat{z}$$
+
+The dot notation for time derivatives will generally be used going forward.
+
+### 1.2.4 - Time
+
+In the domain of classical mechanics, time is considered to be a single universal parameter $t$, which all observers agree on.
+This domain, which is highly accurate at speeds much lower than the speed of light, will be assumed throughout these notes.
+
+### 1.2.5 - Reference Frames
+
+```admonish definition
+A **_reference frame_** is a choice of spatial origin and axes to label positions and a choice of temporal origin to measure times.
+Reference frames that are moving relative to one another are not, generally speaking, physically equivalent.
+There are certain, special frames called **_inertial frames_**, where Newton's laws hold true in their standard, simple form.
+Frames which are accelerating relative to inertial frames are called **_noninertial frames_**, and are frames where Newton's laws do not hold in their standard form.
+```
+
+## 1.3 - Mass and Force
+
+
+
 ```admonish todo title="TODO"
-Finish chapter
+Finish chapter 
 ```

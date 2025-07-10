@@ -32,7 +32,7 @@ Hello World!
 Hello World!
 ```
 
-##
+## Solution
 
 ```admonish solution
 Hello World!

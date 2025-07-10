@@ -1,3 +1,19 @@
+/*
+I don't like the default opacity of 0.1 for most of the admonish blocks,
+so I adjust them here.
+*/
 :is(.admonish-theorem) > :is(.admonition-title, summary.admonition-title) {
-    background-color: rgba(245, 169, 184, 0.2);
+    background-color: rgba(245, 169, 184, 0.25);
+}
+:is(.admonish-proof) > :is(.admonition-title, summary.admonition-title) {
+    background-color: rgba(197, 197, 197, 0.2);
+}
+:is(.admonish-definition) > :is(.admonition-title, summary.admonition-title) {
+    background-color: rgba(91, 206, 250, 0.2);
+}
+:is(.admonish-problem) > :is(.admonition-title, summary.admonition-title) {
+    background-color: rgba(163, 2, 98, 0.15);
+}
+:is(.admonish-solution) > :is(.admonition-title, summary.admonition-title) {
+    background-color: rgba(53, 232, 115, 0.2);
 }

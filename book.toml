@@ -6,7 +6,7 @@ title = "My Physics Notebook"
 
 [build]
 extra-watch-dirs = [
-    "assets/",
+    "./theme/",
 ]
 
 [output.html]
@@ -15,16 +15,16 @@ preferred-dark-theme = "mocha"
 smare-punctuation = true
 no-section-label = true
 additional-css = [
-    "theme/pagetoc.css",
+    "./theme/pagetoc.css",
     # https://github.com/catppuccin/mdbook for source of catppuccin themes
-    "theme/catppuccin.css",
-    "assets/css/mdbook-admonish.css",
+    "./theme/catppuccin.css",
+    "./theme/assets/css/mdbook-admonish.css",
     # this file is generated using `mdbook-admonish generate-custom`
-    "assets/gen/css/mdbook-admonish-custom.css",
+    "./theme/assets/gen/css/mdbook-admonish-custom.css",
     # this file contains overrides for the above css file
-    "assets/css/mdbook-admonish-overrides.css",
+    "./theme/assets/css/mdbook-admonish-overrides.css",
 ]
-additional-js  = ["theme/pagetoc.js"]
+additional-js  = ["./theme/pagetoc.js"]
 mathjax-support = true
 git-repository-url = "https://github.com/sqrtrae/physics"
 git-repository-icon = "fa-github"
@@ -41,24 +41,24 @@ command = "mdbook-admonish"
 assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.admonish.directive.custom.theorem]
-icon = "./assets/icons/theorem.svg"
+icon = "./theme/assets/icons/theorem.svg"
 color = "#F5A9B8"
 aliases = ["proposition", "lemma"]
 
 [preprocessor.admonish.directive.custom.proof]
-icon = "./assets/icons/proof.svg"
+icon = "./theme/assets/icons/proof.svg"
 color = "#C5C5C5"
 collapsible = true
 
 [preprocessor.admonish.directive.custom.definition]
-icon = "./assets/icons/definition.svg"
+icon = "./theme/assets/icons/definition.svg"
 color = "#5BCEFA"
 
 [preprocessor.admonish.directive.custom.problem]
-icon = "./assets/icons/problem.svg"
+icon = "./theme/assets/icons/problem.svg"
 color = "#A30262"
 
 [preprocessor.admonish.directive.custom.solution]
-icon = "./assets/icons/solution.svg"
+icon = "./theme/assets/icons/solution.svg"
 color = "#35E873"
 collapsible = true

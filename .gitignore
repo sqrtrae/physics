@@ -5,4 +5,4 @@ book/
 .idea/
 
 # assets generated during build process
-assets/gen/**
+theme/assets/gen/**

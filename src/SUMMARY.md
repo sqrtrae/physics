@@ -1,6 +1,6 @@
 # Summary
 
-- [Home](README.md)
+[Home](README.md)
 
 ---
 
@@ -16,4 +16,5 @@
 
 # Misc
 
-- [Custom Admonish Blocks](custom_admonish_blocks.md)
+- [Current Goals](misc/goals.md)
+- [Custom Admonish Blocks](misc/admonish.md)

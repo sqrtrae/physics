@@ -6,3 +6,6 @@ book/
 
 # assets generated during build process
 theme/assets/gen/**
+
+# for personal notes not to be included in repo
+notes/

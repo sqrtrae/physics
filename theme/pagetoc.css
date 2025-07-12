@@ -1,6 +1,8 @@
+/*hide if only one header on the page*/
 a[class^='pagetoc-H']:only-child {
     display: none;
 }
+
 @media only screen and (max-width:1439px) {
     .sidetoc {
         display: none;

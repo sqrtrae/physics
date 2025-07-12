@@ -46,6 +46,10 @@ jobs:
           just-version: 1.41.0
       - name: Install mdBook
         run: just install-mdbook
+        # python is used by some local preprocessors
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

@@ -1,7 +1,7 @@
 # Classical Mechanics
 
 ```admonish textbook
-John R. Taylor's _Classical Mechanics_ (2005)
+Taylor, J. _Classical Mechanics_ (2005)
 
 ---
 

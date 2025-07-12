@@ -1,5 +1,5 @@
 alias b := build
-alias o := open
+alias s := serve
 alias gca := generate-custom-admonish
 
 install-mdbook:
@@ -14,7 +14,7 @@ build:
     mdbook-admonish generate-custom ./theme/assets/gen/css/mdbook-admonish-custom.css
     mdbook build
 
-open:
+serve:
     mkdir -p ./theme/assets/gen/css
     mdbook-admonish generate-custom ./theme/assets/gen/css/mdbook-admonish-custom.css
     mdbook serve --open

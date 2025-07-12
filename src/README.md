@@ -9,6 +9,8 @@ If you find any mistakes, typos, or other issues, please open an issue or PR!
 Do note however that I _will not_ be accepting any requests to add **new** content (as in notes, problems, etc.).
 The primary purpose of this repository is to be an aid as I study physics/mathematics subjects, and new content will only be added as I learn more!
 
+Also, be aware that the layout of this repository can (and probably will) change frequently as I add more stuff.
+
 ---
 
 Oh and one more thing...

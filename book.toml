@@ -7,6 +7,7 @@ title = "My Physics Notebook"
 [build]
 extra-watch-dirs = [
     "./theme/",
+    "./preprocessors/"
 ]
 
 [output.html]
@@ -33,7 +34,11 @@ git-repository-icon = "fa-github"
 enable = true
 level = 0
 
+[preprocessor.inject-headers]
+command = "python preprocessors/inject_headers.py"
+
 [preprocessor.pagetoc]
+after = ["inject-headers"]
 
 [preprocessor.admonish]
 after = ["links"]
@@ -48,7 +53,6 @@ aliases = ["proposition", "lemma"]
 [preprocessor.admonish.directive.custom.proof]
 icon = "./theme/assets/icons/proof.svg"
 color = "#C5C5C5"
-collapsible = true
 
 [preprocessor.admonish.directive.custom.definition]
 icon = "./theme/assets/icons/definition.svg"
@@ -61,9 +65,13 @@ color = "#A30262"
 [preprocessor.admonish.directive.custom.solution]
 icon = "./theme/assets/icons/solution.svg"
 color = "#35E873"
-collapsible = true
 
 [preprocessor.admonish.directive.custom.reference]
 icon = "./theme/assets/icons/reference.svg"
 color = "#EF7627"
 aliases = ["textbook"]
+
+[preprocessor.admonish.directive.custom.remark]
+icon = "./theme/assets/icons/remark.svg"
+color = "#800080"
+aliases = ["comment"]

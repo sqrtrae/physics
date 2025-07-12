@@ -47,3 +47,13 @@ Hello World!
 ```admonish textbook
 Hello World!
 ```
+
+## Remark
+
+```admonish remark
+Hello World!
+```
+
+```admonish comment
+Hello World!
+```

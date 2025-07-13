@@ -12,7 +12,6 @@ extra-watch-dirs = [
 
 [output.html]
 default-theme = "latte"
-preferred-dark-theme = "mocha"
 smare-punctuation = true
 no-section-label = true
 additional-css = [

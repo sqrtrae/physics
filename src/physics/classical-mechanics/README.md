@@ -11,4 +11,6 @@ Comments:
 
 ## Table of Contents
 
-- [Chapter 1 - Newton's Laws of Motion](./ch1.md)
+| Chapter                                         | Problems                      |
+|-------------------------------------------------|-------------------------------|
+| [Chapter 1 - Newton's Laws of Motion](./ch1.md) | [Problems](./problems/ch1.md) |

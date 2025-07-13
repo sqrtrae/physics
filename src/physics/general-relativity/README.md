@@ -11,4 +11,7 @@ Comments:
 
 ## Table of Contents
 
-- [Chapter 1 - Special Relativity and Flat Spacetime](./ch1.md) ([Problems](./problems/ch1.md))
+
+| Chapter                                         | Problems                      |
+|-------------------------------------------------|-------------------------------|
+| [Chapter 1 - Special Relativity and Flat Spacetime](./ch1.md) | [Problems](./problems/ch1.md) |

@@ -11,9 +11,9 @@ Material used on this page:
 
 ## Problems & Solutions
 
-```admonish problem title="Problem 1.1"
 {{#header title="Problem 1.1" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.1"
 Given the two vectors $\vec{b} = \hat{x} + \hat{y}$ and $\vec{c} = \hat{x} + \hat{z}$ find
 
 **(a).** $\vec{b} + \vec{c}$
@@ -33,18 +33,18 @@ Given the two vectors $\vec{b} = \hat{x} + \hat{y}$ and $\vec{c} = \hat{x} + \ha
 
 **(d).**
 $$
-\begin{align}
+\begin{align*}
 \vec{b}\times\vec{c} &= (\hat{x} + \hat{y})\times(\hat{x} + \hat{z}) \\\\
                      &= \hat{x}\times\hat{z} + \hat{y}\times\hat{x} + \hat{y}\times\hat{z} \\\\
                      &= (-1)\hat{y} + (-1)\hat{z} + (1)\hat{x} \\\\
                      &= \boxed{\hat{x} - \hat{y} - \hat{z}}
-\end{align}
+\end{align*}
 $$
 ```
 
-```admonish problem title="Problem 1.2"
 {{#header title="Problem 1.2" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.2"
 Two vectors are given as $\vec{b} = \hat{x} + 2\hat{y} + 3\hat{z}$ and $\vec{c} = 3\hat{x} + 2\hat{y} + \hat{z}$. Find
 
 **(a).** $\vec{b} + \vec{c}$
@@ -60,19 +60,19 @@ Two vectors are given as $\vec{b} = \hat{x} + 2\hat{y} + 3\hat{z}$ and $\vec{c} 
 
 **(c).**
 $$
-\begin{align}
+\begin{align*}
 \vec{b}\times\vec{c} &= (\hat{x} + 2\hat{y} + 3\hat{z})\times(3\hat{x} + 2\hat{y} + \hat{z}) \\\\
                      &= (1 * 2)\hat{x}\times\hat{y} + (1 * 1)\hat{x}\times\hat{z} + (2 * 3)\hat{y}\times\hat{x} \\\\
                      &\phantom{=} + (2 * 1)\hat{y}\times\hat{z} + (3 * 3)\hat{z}\times\hat{x} + (3 * 2)\hat{z}\times \hat{y} \\\\
                      &= (2)\hat{z} + (1)(-\hat{y}) + (6)(-\hat{z}) + (2)\hat{x} + (9)\hat{y} + (6)(-\hat{x}) \\\\
                      &= \boxed{-4\hat{x} + 8\hat{y} - 4\hat{z}}
-\end{align}
+\end{align*}
 $$
 ```
 
-```admonish problem title="Problem 1.3"
 {{#header title="Problem 1.3" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.3"
 By applying Pythagorean's theorm (the usual two-dimensional version) twice over, prove that the length $r$ of a three-dimensional vector $\vec{r} = (x, y, z)$ satisfies $r^2 = x^2 + y^2 + z^2$
 ```
 ```admonish solution
@@ -92,9 +92,9 @@ $$
 $$
 ```
 
-```admonish problem title="Problem 1.4"
 {{#header title="Problem 1.4" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.4"
 One of the many uses of the dot product is to find the angle between two given vectors.
 Find the angle between the vectors $\vec{b} = (1, 2, 4)$ and $\vec{c} = (4, 2, 1)$ by evaluating their dot product.
 ```
@@ -119,28 +119,28 @@ $$
 $$
 ```
 
-```admonish problem title="Problem 1.5"
 {{#header title="Problem 1.5" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.5"
 Find the angle between a body diagonal of a cube and any one of its face diagonals.
 ```
 
-```admonish problem title="Problem 1.6"
 {{#header title="Problem 1.6" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.6"
 By evaluating their dot product, find the values of the scalar $s$ for which the two vectors $\vec{b} = \hat{x} + s\hat{y}$ and $\vec{c} = \hat{x} - s\hat{y}$ are orthogonal.
 ```
 
-```admonish problem title="Problem 1.7"
 {{#header title="Problem 1.7" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.7"
 Prove that the two definitions of the dot product $\vec{r}\cdot\vec{s}$ as $rs\cos\theta$ and $\sum r_is_i$ are equal.
 One way to do this is to choose your $x$ axis along the direction of $\vec{r}$.
 ```
 
-```admonish problem title="Problem 1.8"
 {{#header title="Problem 1.8" level=3 hidden=true}}
 
+```admonish problem title="Problem 1.8"
 **(a).** Use the definition $\vec{r}\cdot\vec{s} = \sum r_is_i$ to prove that the dot product is distributive, that is, $\vec{r}\cdot(\vec{u} + \vec{v}) = \vec{r}\cdot\vec{u} + \vec{r}\cdot\vec{v}$.
 
 **(b).** If $\vec{r}$ and $\vec{s}$ are vectors that depend on time, prove that the product rule for differentiating products applies to $\vec{r}\cdot\vec{s}$, that is, that
@@ -150,6 +150,7 @@ $$
 $$
 ```
 
-```admonish problem title="Problem 1.?"
 {{#header title="Problem 1.?" level=3 hidden=true}}
+
+```admonish problem title="Problem 1.?"
 ```

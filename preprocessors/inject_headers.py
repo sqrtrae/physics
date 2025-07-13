@@ -17,12 +17,16 @@ def create_header(
     fmt_title = re.sub(r'\W+', '-', title)
     hidden_str = ' hidden' if hidden else ''
     level_str = f'h{level}'
+    # the newlines ensure the contents immediately preceding/following
+    # the header are processed correctly.
     return (
+        f'\n'
         f'<{level_str}{hidden_str}>'
         f'<a class="header" href="#{fmt_title}">{title}</a>'
         f'</{level_str}>'
         #
         f'<a id="{fmt_title}"></a>'
+        f'\n'
     )
 
 

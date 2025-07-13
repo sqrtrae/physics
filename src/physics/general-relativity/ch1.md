@@ -9,14 +9,11 @@ Comments:
 - This textbook is the source for all notes and problems in this topic.
 ```
 
-$$
-\ket{a}\bra{b}\diff\bhat{z}\bvec{y}
-$$
-
 ## 1.1 - Prelude
 
 ### 1.1.1 - Newtonian Gravity
 
+```admonish remark
 The Newtonian theory of gravity has two basic elements: (1) an equation for the gravitational field response to matter, and (2) an equation for matter's response to the gravitational field.
 The conventional statement of these two elements is in terms of forces between particles, with the equation for the gravitational field written in terms of a force between two objects:
 
@@ -41,9 +38,11 @@ and the acceleration is given by:
 $$
 \vec{a} = -\nabla\Phi
 $$
+```
 
 ### 1.1.2 - General Relativity
 
+```admonish remark
 In GR, the two elements of Newtonian Gravity are formulated in terms of the curvature of spacetime.
 The response of spacetime curvature to the presence of matter and energy is governed by Einstein's equation:
 
@@ -58,6 +57,7 @@ $$
 $$
 
 where $x^\mu(\lambda)$ is the parameterized path of free particles in curved spacetime.
+```
 
 ## 1.2 - Space and Time, Separately and Together
 

@@ -1,28 +1,26 @@
-<!--
-This allows for inline mathjax expressions using $...$ to be rendered properly.
-Modified from https://tex.stackexchange.com/questions/27633
--->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'] ],
-        processEscapes: true
-      }
-    });
+<!--MathJax Support-->
+<script>
+    MathJax = {
+        loader: {
+            load: [
+                '[tex]/colorv2',
+                '[tex]/physics',
+            ],
+        },
+        tex: {
+            packages: {'[+]': ['color', 'physics']},
+            inlineMath: [ ['$', '$'] ],
+            displayMath: [ ['$$', '$$'] ],
+            processEscapes: true,
+            processEnvironments: true,
+            processRefs: true,
+            tags: 'ams',
+            tagSide: 'right',
+            // component configurations
+            physics: {
+                italicdiff: false,
+            },
+        },
+    };
 </script>
-
-<!--Mathjax macros-->
-<div class="hidden">
-    $$
-    \newcommand{\diff}{\text{d}}
-    \newcommand{\bhat}[1]{\mathbf{\hat{#1}}}
-    \newcommand{\bvec}[1]{\mathbf{\vec{#1}}}
-
-    <!--derivatives-->
-    \newcommand{\dd}[3][:3]{\frac{d#1}{d#2}}
-
-    <!--bra-ket notation-->
-    \newcommand{\bra}[1]{\left\langle #1\right|}
-    \newcommand{\ket}[1]{\left| #1 \right\rangle}
-    $$
-</div>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.js"></script>

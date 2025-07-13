@@ -25,7 +25,8 @@ additional-css = [
     "./theme/assets/css/mdbook-admonish-overrides.css",
 ]
 additional-js  = ["./theme/pagetoc.js"]
-mathjax-support = true
+# we use a customized mathjax script, so ensure the builtin mathjax-support is disabled.
+mathjax-support = false
 git-repository-url = "https://github.com/sqrtrae/physics"
 git-repository-icon = "fa-github"
 

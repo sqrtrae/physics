@@ -48,7 +48,7 @@ assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
 [preprocessor.admonish.directive.custom.theorem]
 icon = "./theme/assets/icons/theorem.svg"
 color = "#F5A9B8"
-aliases = ["proposition", "lemma"]
+aliases = ["proposition", "lemma", "corollary"]
 
 [preprocessor.admonish.directive.custom.proof]
 icon = "./theme/assets/icons/proof.svg"
@@ -61,7 +61,6 @@ color = "#5BCEFA"
 [preprocessor.admonish.directive.custom.problem]
 icon = "./theme/assets/icons/problem.svg"
 color = "#A30262"
-aliases = ["question"]
 
 [preprocessor.admonish.directive.custom.solution]
 icon = "./theme/assets/icons/solution.svg"

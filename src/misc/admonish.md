@@ -1,4 +1,4 @@
-# Custom Admonish Blocks
+# Admonish Blocks
 
 ## Theorem
 
@@ -11,6 +11,10 @@ Hello World!
 ```
 
 ```admonish proposition
+Hello World!
+```
+
+```admonish corollary
 Hello World!
 ```
 
@@ -32,9 +36,17 @@ Hello World!
 Hello World!
 ```
 
+```admonish question
+Hello World!
+```
+
 ## Solution
 
 ```admonish solution
+Hello World!
+```
+
+```admonish answer
 Hello World!
 ```
 
@@ -48,6 +60,10 @@ Hello World!
 Hello World!
 ```
 
+```admonish resource
+Hello World!
+```
+
 ## Remark
 
 ```admonish remark
@@ -55,5 +71,20 @@ Hello World!
 ```
 
 ```admonish comment
+Hello World!
+```
+
+```admonish opinion
+Hello World!
+```
+
+## Example
+
+```admonish example
+Hello World!
+```
+
+## TODO
+```admonish todo title="TODO"
 Hello World!
 ```

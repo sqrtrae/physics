@@ -20,4 +20,4 @@
 # Misc
 
 - [Current Goals](misc/goals.md)
-- [Custom Admonish Blocks](misc/admonish.md)
+- [Admonish Blocks](misc/admonish.md)

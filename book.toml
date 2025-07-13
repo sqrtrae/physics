@@ -61,17 +61,19 @@ color = "#5BCEFA"
 [preprocessor.admonish.directive.custom.problem]
 icon = "./theme/assets/icons/problem.svg"
 color = "#A30262"
+aliases = ["question"]
 
 [preprocessor.admonish.directive.custom.solution]
 icon = "./theme/assets/icons/solution.svg"
 color = "#35E873"
+aliases = ["answer"]
 
 [preprocessor.admonish.directive.custom.reference]
 icon = "./theme/assets/icons/reference.svg"
 color = "#EF7627"
-aliases = ["textbook"]
+aliases = ["textbook", "resource"]
 
 [preprocessor.admonish.directive.custom.remark]
 icon = "./theme/assets/icons/remark.svg"
-color = "#800080"
-aliases = ["comment"]
+color = "#E40303"
+aliases = ["comment", "opinion"]

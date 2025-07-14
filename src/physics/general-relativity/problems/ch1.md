@@ -11,7 +11,7 @@ Material used on this page:
 
 ## Problems & Solutions
 
-<h3 hidden><a class="header">Problem 1.1</a></h3>
+{{#header title="Problem 1.1" level=3 hidden=true}}
 
 ```admonish problem title="Problem 1.1"
 Consider an inertial frame $S$ with coordinates $x^\mu = (t, x, y, z)$, and a frame $S'$ with coordinates $x^{\mu'}$ related to $S$ by a boost with velocity parameter $v$ along the $y$-axis.
@@ -78,4 +78,26 @@ Imagine we have a wall at rest in $S'$, lying along the line $x' = -y'$.
 [//]: # (\vec{v}_b = {v_b}'\cos&#40;\theta + \pi/4&#41;\hat{x}')
 
 [//]: # ($$)
+```
+
+{{#header title="Problem 1.2" level=3 hidden=true}}
+
+```admonish problem title="Problem 1.2"
+Imagine that space (not spacetime) is actually a finite box, or in more sophisticated terms, a three-torus of size $L$.
+By this we mean that there is a coordinate system $x^\mu = (t, x, y, z)$ such that every point with coordinates $(t, x, y, z)$ is identified with every point with coordinates $(t, x + L, y, z)$, $(t, x, y + L, z)$, and $(t, x, y, z + L)$.
+Note that the time coordinate is the same.
+Now consider two observers; observer $A$ is at rest in this coordinate system (constant spatial coordinates), while observer $B$ moves in the $x$-direction with constant speed $v$.
+$A$ and $B$ begin at the same event, and while $A$ remains still, $B$ moves once around the universe and comes back to intersect the worldline of $A$ without ever having to accelerate (since the universe is periodic).
+
+(a). What are the relative proper times experienced in this interval by $A$ and $B$? 
+
+(b). Is this consistent with your understanding of Lorentz invariance?
+```
+
+{{#header title="Problem 1.3" level=3 hidden=true}}
+
+```admonish problem title="Problem 1.3"
+Three events, $A$, $B$, $C$, are seen by observer $\mathcal{O}$ to occur in the order $ABC$. 
+Another observer, $\bar{\mathcal{O}}$, sees the events to occur in the order $CBA$. 
+Is it possible that a third observer sees the events in the order $ACB$?
 ```

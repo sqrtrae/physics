@@ -1,8 +1,21 @@
 :root {
     /*overridden to use custom svg for some builtins*/
+    --md-admonition-icon--admonish-note: url("data:image/svg+xml;charset=utf-8,<svg id='Layer_1' height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg' data-name='Layer 1'><path d='m22.2 2.163a5 5 0 0 0 -4.157-1.069l-1.764.432a4 4 0 0 0 -3.279 3.935v15.467a6.909 6.909 0 0 1 -2 0v-15.467a3.981 3.981 0 0 0 -3.226-3.923l-1.874-.456a5 5 0 0 0 -5.9 4.918v10.793a5 5 0 0 0 4.105 4.919l6.286 1.143a9 9 0 0 0 3.218 0l6.291-1.143a5 5 0 0 0 4.1-4.919v-10.793a4.983 4.983 0 0 0 -1.8-3.837z'/></svg>");
     --md-admonition-icon--admonish-info: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve' width='512' height='512'><g><path d='M256,512c141.385,0,256-114.615,256-256S397.385,0,256,0S0,114.615,0,256C0.153,397.322,114.678,511.847,256,512z    M234.667,128c0-11.782,9.551-21.333,21.333-21.333c11.782,0,21.333,9.551,21.333,21.333v170.667   c0,11.782-9.551,21.333-21.333,21.333c-11.782,0-21.333-9.551-21.333-21.333V128z M256,384c11.782,0,21.333,9.551,21.333,21.333   s-9.551,21.333-21.333,21.333c-11.782,0-21.333-9.551-21.333-21.333S244.218,384,256,384z'/></g></svg>");
     --md-admonition-icon--admonish-example: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' id='Filled' viewBox='0 0 24 24' width='512' height='512'><path d='M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24ZM12,5a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,12,5Zm-1,5h1a2,2,0,0,1,2,2v6a1,1,0,0,1-2,0V12H11a1,1,0,0,1,0-2Z'/></svg>");
     --md-admonition-icon--admonish-question: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' id='Filled' viewBox='0 0 24 24' width='512' height='512'><path d='M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm0,20a1,1,0,1,1,1-1A1,1,0,0,1,12,20Zm1.93-7.494A1.982,1.982,0,0,0,13,14.257V15a1,1,0,0,1-2,0v-.743a3.954,3.954,0,0,1,1.964-3.5,2,2,0,0,0,1-2.125,2.024,2.024,0,0,0-1.6-1.595A2,2,0,0,0,10,9,1,1,0,0,1,8,9a4,4,0,1,1,5.93,3.505Z'/></svg>");
+}
+
+/*override color of builtin 'note' admonish block*/
+:is(.admonition):is(.admonish-note) {
+    border-color: #3DA542;
+}
+
+:is(.admonish-note) > :is(.admonition-title, summary.admonition-title) {
+    background-color: rgba(61, 165, 66, 0.2);
+}
+:is(.admonish-note) > :is(.admonition-title, summary.admonition-title)::before {
+    background-color: #3DA542;
 }
 
 /*override color of builtin 'info' admonish block (used for todo)*/

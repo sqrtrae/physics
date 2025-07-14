@@ -84,6 +84,12 @@ Hello World!
 Hello World!
 ```
 
+## Note
+
+```admonish note
+Hello World!
+```
+
 ## TODO
 ```admonish todo title="TODO"
 Hello World!

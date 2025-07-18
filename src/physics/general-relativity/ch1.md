@@ -57,16 +57,62 @@ where $x^\mu(\lambda)$ is the parameterized path of free particles in curved spa
 
 ## 1.2 - Space and Time, Separately and Together
 
+```admonish note title="Einstein Notation"
+Einstein notation uses greek indices as shorthand for vectors and one-forms, e.g.:
+
+\begin{equation}
+x^\mu := (x^0, x^1, x^2, x^3)\qc x_\mu := (x_0, x_1, x_2, x_3)
+\end{equation}
+
+It is convention that the first component of vectors/one-forms is the temporal component, and the rest are the spatial components.
+When referring to only the spatial components of a vector/one-form, latin indices are used instead, e.g.:
+
+\begin{equation}
+x^i := (x^1, x^2, x^3)\qc x_i := (x_1, x_2, x_3)
+\end{equation}
+
+The notation is naturally extended to higher order tensors.
+For example, the shorthand under Einstein notation for a generic linear transformation tensor is:
+
+\begin{equation}
+A^\mu_{\phantom\mu\nu} = \mqty(
+  A^0_{\phantom{0}0} & A^0_{\phantom{0}1} & A^0_{\phantom{0}2} & A^0_{\phantom{0}3} \n
+  A^1_{\phantom{1}0} & A^1_{\phantom{1}1} & A^1_{\phantom{1}2} & A^1_{\phantom{1}3} \n
+  A^2_{\phantom{2}0} & A^2_{\phantom{2}1} & A^2_{\phantom{2}2} & A^2_{\phantom{2}3} \n
+  A^3_{\phantom{3}0} & A^3_{\phantom{3}1} & A^3_{\phantom{3}2} & A^3_{\phantom{3}3}
+)
+\end{equation}
+
+When denoting the sum over products of components of compatible tensors, a summation convention is used: if the same index appears twice—once "upstairs" and once "downstairs"—then that index is implicitly summed over in the term. For example:
+
+\begin{equation}
+x^\mu y_\mu := \sum_{\mu=0}^3 x_\mu y^\mu.
+\end{equation}
+
+When the index is a latin index, only the spatial components are summed over:
+
+\begin{equation}
+x^i y_i := \sum_{i=1}^3 x_i y^i.
+\end{equation}
+```
+
 ```admonish definition
 **_Spacetime_** is a four-dimensional set, with elements labeled by three dimensions of space and one dimension of time.
-A point $p = (t, x, y, z)$ in spacetime is called an **_event_**.
+A point $x^\mu = (ct, x, y, z)$ in spacetime is called an **_event_**.
 The path of a particle is a curve through spacetime called a **_worldline_**.
 A **_light cone_** at an event is the locus of paths that could be taken by light rays passing through the event.
 
 Worldlines through an event can either be **_timelike_** (inside the light cone), **_spacelike_** (outside the light cone), or **_light-like_** (on the light cone).
-The set of all events inside the light cone of an event $p$ are called **_timelike separated_** from $p$.
-The set of all events outside the light cone of an event $p$ are called **_spacelike separated_** from $p$.
-The set of all events on the light cone of an event $p$ are called **_light-like separated_** from $p$.
+The set of all events inside the light cone of an event $x^\mu$ are called **_timelike separated_** from $x^\mu$.
+The set of all events outside the light cone of an event $x^\mu$ are called **_spacelike separated_** from $x^\mu$.
+The set of all events on the light cone of an event $x^\mu$ are called **_light-like separated_** from $x^\mu$.
+```
+
+```admonish definition
+An **_inertial frame_**, or **_inertial coordinates_**, is a coordinate system which is not accelerating.
+
+We can check whether a coordinate system is inertial via a simple test: send a light ray at speed $c$ in a straight line from any point 1 to any other point 2, then send it back from point 2 to point 1 at the same speed $c$.
+Then, if and only if the frame is inertial, an observer at point 1 will observe the light reaching point 2 halfway between the time the light ray left point 1 and the time it arrived back at point 1, regardless of the locations of point 1 and 2 and regardless of the speed $c$ of the light ray.
 ```
 
 ```admonish definition
@@ -82,44 +128,11 @@ The spacetime interval between two events is invariant under changes of inertial
 -(c\Delta t)^2 + (\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2 = -(c\Delta t')^2 + (\Delta x')^2 + (\Delta y')^2 + (\Delta z')^2,
 \end{equation}
 
-where $(t, x, y, z)$ and $(t', x', y', z')$ are two sets of inertial coordinates.
-```
-
-```admonish note title="Einstein Notation"
-Einstein notation uses greek indices as shorthand for spacetime coordinates and four-vectors:
+where $(t, x, y, z)$ and $(t', x', y', z')$ are two sets of inertial coordinates. By introducing the $4\times4$ matrix $\eta_{\mu\nu} := \text{diag}(-1, 1, 1, 1)$ called the **_metric_**, we can simplify this equation:
 
 \begin{equation}
-x^\mu : \mqty{
-  x^0 = ct \\\\
-  x^1 = x \\\\
-  x^2 = y \\\\
-  x^3 = z.
-}
+(\Delta s)^2 = -\eta_{\mu\nu}\Delta x^\mu \Delta x^\nu
 \end{equation}
-
-When only the spatial components of a four-vector are referred to, Latin indices are instead used:
-
-\begin{equation}
-x^i : \mqty{
-  x^1 = x \\\\
-  x^2 = y \\\\
-  x^3 = z.
-}
-\end{equation}
-
-The spacetime interval can also be written more concisely using this notation, by introducing a $4\cross4$ matrix called the **_metric_**:
-
-\begin{equation}
-\eta_{\mu\nu} = \mqty(\dmat{-1,1,1,1}).
-\end{equation}
-
-We then have:
-
-\begin{equation}
-(\Delta s)^2 = \eta_{\mu\nu}\Delta x^\mu \Delta x^\nu.
-\end{equation}
-
-The above equation uses the summation convention, which is an implied summation over indices appearing both as subscripts and superscripts.
 ```
 
 ```admonish definition
@@ -137,7 +150,7 @@ For more general, smooth paths between two events, the **_line element_** is use
 \dd s^2 = \eta_{\mu\nu} \dd x^\mu \dd x^\nu,
 \end{equation}
 
-where $x^\mu(\lambda)$ is a parameterized, smooth curve. The spacetime interval and propert time are then:
+where $x^\mu(\lambda)$ is a parameterized, smooth curve. The spacetime interval and proper time are then:
 
 \begin{equation}
 \Delta s = \int \sqrt{\eta_{\mu\nu}\dv{x^\mu}{\lambda}\dv{x^\nu}{\lambda}\dd\lambda}, \qq{and} \Delta\tau = \int \sqrt{-\eta_{\mu\nu}\dv{x^\mu}{\lambda}\dv{x^\nu}{\lambda}\dd\lambda}.
@@ -145,3 +158,7 @@ where $x^\mu(\lambda)$ is a parameterized, smooth curve. The spacetime interval 
 ```
 
 ## 1.3 - Lorentz Transformations
+
+```admonish definition
+There are two main classes of coordinate transformations: (1) 
+```
